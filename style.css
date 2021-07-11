@@ -1,0 +1,175 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: #D5F5FF;
+  color: #0BD5C3
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.pap {
+  position: relative;
+  transform: translate(-50%, 50px);
+  left: 50%;
+  border: 1px solid #008FFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  max-width: 700px;
+  border-radius: 5px
+}
+.title {
+  padding: 2px 5px;
+  margin: 0 0 30px;
+  box-shadow: 0 5px 10px 0 #E1E1E1;
+  border-radius: 10px
+}
+.title > span {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 0 2px  #2FCCFF
+}
+.title :nth-child(2) {
+  color: #FF006F
+}
+.title > span::first-letter {
+  text-transform: uppercase
+}
+
+.vanced > span {
+  color: #008FFF;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px
+}
+.customize {
+  padding-left: 20px;
+  border: 1px solid #008FFF;
+  border-radius: 5px;
+  transition: .5s;
+  height: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 530px;
+}
+.close {
+  height: 123px;
+}
+.customize > div {
+  padding: 5px 0px 5px 20px;
+}
+.customize div:first-of-type {
+  padding-left: 3px;
+  display: flex;
+  place-items: center
+}
+.customize textarea {
+  resize: none;
+  outline: none;
+  border: 1px solid #2FCCFF;
+  padding: 1px 5px;
+  border-radius: 5px
+}
+.customize textarea:focus {
+  box-shadow: 0 0 3px 0 #2FCCFF;
+  
+}
+.customize > div label {
+  font-size: 16px;
+  position: relative;
+  padding-left: 10px;
+  user-select: none
+}
+input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none
+}
+input[type=checkbox] + label:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #0096FF;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  background-color: #fff;
+}
+input[type=checkbox]:checked + label:after,
+input[type=checkbox]:not(:checked):hover + label:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #0096FF;
+  left: -16px;
+  top: 5px;
+}
+input[type=checkbox]:not(:checked):hover + label:after {
+  opacity: 0.2
+}
+
+.container {
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 0 #D6D6D6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 530px;
+}
+
+.container * {
+  border-radius: 10px;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  padding: 0 5px;
+}
+
+.container :first-child {
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid #008FFF;
+  background-color: #F9F9F8;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #008FFFAD;
+  text-align: center;
+  letter-spacing: 1px;
+  flex: 0 1 auto;
+  min-width: 100px;
+}
+
+.container :nth-child(2) {
+  background-color: #008FFF;
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  flex: 0 1 auto;
+  user-select: none
+}
+
+.container :last-child {
+  color: #008FFF;
+  cursor: pointer;
+  flex: 0 1 auto;
+  user-select: none
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HTML</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="pap">
+    <div class="title">
+      <span>powerful</span>
+      <span>password</span>
+      <span>generator</span>
+    </div>
+    <div class="vanced">
+      <span id="cust">customize &#8250;</span>
+      <div class="customize">
+        <div>
+          <textarea id="mxl" rows="1" cols="2" maxlength="2" placeholder="8"></textarea>
+          <label for="length">length</label>
+        </div>
+        <div>
+          <input type="checkbox" id="number" data-contain="0123456789"/>
+          <label for="number">number</label>
+        </div>
+        <div>
+          <input type="checkbox" id="lowerL" data-contain="qwertyuiopasdfghjklzxcvbnm"/>
+          <label for="lowerL">lowercase Letters</label>
+        </div>
+        <div>
+          <input type="checkbox" id="upperL" data-contain="QWERTYUIOPASDFGHJKLZXCVBNM"/>
+          <label for="upperL">uppercase Letters</label>
+        </div>
+        <div>
+          <input type="checkbox" id="sym" data-contain="@#$_&-+()/*?!£¢€¥={}%[]"/>
+          <label for="sym">symbols</label>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <input type="text" id="pass" readonly />
+      <span id="gen">Genarat</span>
+      <span id="copy">copy</span>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
+
+
